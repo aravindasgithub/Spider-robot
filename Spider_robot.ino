@@ -477,7 +477,7 @@ void srv( int  p11, int p21, int p31, int p41, int p12, int p22, int p32, int p4
         s22 = p22;
     }
 
-    // Back Right Lift Servo
+    
     if (s32 < p32)
     {
       if ((s32 + sp3) <= p32)
@@ -494,7 +494,7 @@ void srv( int  p11, int p21, int p31, int p41, int p12, int p22, int p32, int p4
         s32 = p32;
     }
 
-    // Front Right Lift Servo
+    
     if (s42 < p42)
     {
       if ((s42 + sp4) <= p42)
@@ -511,19 +511,19 @@ void srv( int  p11, int p21, int p31, int p41, int p12, int p22, int p32, int p4
         s42 = p42;
     }
 
-    // Write Pivot Servo Values
+  
     myServo1.write(s11 + da);
     myServo3.write(s21 + db);
     myServo5.write(s31 + dc);
     myServo7.write(s41 + dd);
 
-    // Write Lift Servos Values
+    
     myServo2.write(s12);
     myServo4.write(s22);
     myServo6.write(s32);
     myServo8.write(s42);
 
-    delay(spd); // Delay before next movement
+    delay(spd); 
 
-  }//while
-} //srv
+  }
+} 
