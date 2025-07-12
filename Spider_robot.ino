@@ -409,7 +409,7 @@ void srv( int  p11, int p21, int p31, int p41, int p12, int p22, int p32, int p4
         s21 = p21;
     }
 
-    // Back Right Pivot Servo
+    
     if (s31 < p31)
     {
       if ((s31 + sp3) <= p31)
@@ -426,7 +426,7 @@ void srv( int  p11, int p21, int p31, int p41, int p12, int p22, int p32, int p4
         s31 = p31;
     }
 
-    // Front Right Pivot Servo
+    
     if (s41 < p41)
     {
       if ((s41 + sp4) <= p41)
@@ -443,7 +443,7 @@ void srv( int  p11, int p21, int p31, int p41, int p12, int p22, int p32, int p4
         s41 = p41;
     }
 
-    // Front Left Lift Servo
+   
     if (s12 < p12)
     {
       if ((s12 + sp1) <= p12)
@@ -460,7 +460,7 @@ void srv( int  p11, int p21, int p31, int p41, int p12, int p22, int p32, int p4
         s12 = p12;
     }
 
-    // Back Left Lift Servo
+   
     if (s22 < p22)
     {
       if ((s22 + sp2) <= p22)
